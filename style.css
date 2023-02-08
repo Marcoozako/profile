@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Space+Mono&family=Taviraj:wght@400;500;700&display=swap');
+
+
+body {
+  background-color: #E2EFDE;
+  margin: 0;
+  color: #424B54;
+  text-align: center;
+}
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 600;
+  line-height: 0,8em;
+}
+
+p {
+  font-family: 'Space Mono', monospace;
+}
+
+.card {
+  background-color: #AFD0BF;
+  margin: 20px;
+  padding: 20px 20px;
+  border-radius: 12px;
+  box-shadow: -10px 10px 30px #6f7874c3 ;
+}
+
+a {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  padding: 3px;
+}
+.btn-red {
+  background-color: #EC5447;
+  color: azure;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  border-radius: 7px;
+  box-shadow: - 1px, -2px, 1px #ca564b;
+}
+
+.btn-red:hover {
+  text-transform: capitalize;
+  background-color: #6E07F3;
+  color: white;
+}
+
+#img-circle {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.container > .card {
+  width: 30%;
+}
+
+.width-500 {
+  margin: 20px 15%;
+}
+
+/* responsive */
+
+@media (max-width: 720px) {
+  /* Pour un écran < 720px, cette classe CSS s'applique */
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+    .container > .card {
+      width: 65%;
+    }
+}
+
+@media (max-width: 540px) {
+  /* Pour un écran < 540px, cette classe CSS s'applique */
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container > .card {
+    width: 65%;
+  }
+}
